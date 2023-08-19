@@ -1,0 +1,23 @@
+<ion-header translucent>
+  <!-- <ion-toolbar> -->
+  <!-- <ion-title>Searchbar</ion-title> -->
+  <!-- </ion-toolbar> -->
+  <ion-toolbar>
+    <ion-searchbar mode="ios" placeholder="Søk etter turer" [value]="searchStr"
+      (keyup.enter)="changeTourCategory($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-button *ngIf="tour_category || searchStr" mode="ios" class="custom-showall" shape="round" size="small"
+    (click)="showAll()">
+    Vis alle
+  </ion-button>
+
+  <div style="width: 100%; height: 100%" #mapElement class="map"></div>
+
+  <ion-button mode="ios" class="custom-closeby" shape="round" size="small" (click)="doCloseBy()">
+    I nærheten
+  </ion-button>
+</ion-content>

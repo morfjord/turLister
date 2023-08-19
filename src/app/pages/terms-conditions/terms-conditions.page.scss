@@ -1,0 +1,21 @@
+ion-header {
+    ion-toolbar {
+        ion-buttons {
+            ion-back-button {
+                color: white !important;
+                --icon-font-size: 22px;
+                padding-left: 10px;
+            }
+            ion-button {
+                ion-icon {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+ion-content {
+    h6 {
+        line-height: 24px;
+    }
+}

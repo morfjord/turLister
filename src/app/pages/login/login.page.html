@@ -1,0 +1,62 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-undo-outline" text="" defaultHref="/tabs/tab-mytours"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Logg inn</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item lines="none" class="ion-text-center">
+    <ion-label class="custom-title ion-text-center font-size-22">Koble til:</ion-label>
+  </ion-item>
+
+  <!-- <ion-item lines="none"> -->
+  <ion-row>
+    <ion-col size="12">
+      <ion-button mode="ios" expand="full" class="custom-fb-button" size="small" (click)="loginWithFacebook()">
+        Facebook
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col size="6">
+      <ion-button mode="ios" class="custom-in-button" size="small" (click)="loginWithInstagram()">
+        Instagram
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+  <!-- </ion-item> -->
+
+  <ion-item lines="none" class="ion-text-center">
+    <ion-label class="custom-title ion-text-center font-size-18">Velkommen til turLister!</ion-label>
+  </ion-item>
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="onLoginSubmit()">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">E-postadresse</ion-label>
+        <ion-input formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Passord</ion-label>
+        <ion-input type="password" formControlName="password" required></ion-input>
+      </ion-item>
+      <!-- <ion-item lines="none">
+        <ion-label>Husk meg</ion-label>
+        <ion-checkbox mode="md" slot="start" [checked]="isRememberMe"></ion-checkbox>
+      </ion-item> -->
+    </ion-list>
+    <div class="ion-padding-top ion-padding-bottom">
+      <ion-button mode="ios" expand="full" type="submit" class="ion-no-margin custom-login">Logg inn</ion-button>
+    </div>
+
+    <ion-item lines="none" class="custom-footer-actions ion-no-margin ion-no-padding">
+      <ion-label (click)="goForgotPassword()">Glemt passord?</ion-label>
+      <ion-label class="ion-text-right" (click)="goSignupPage()">Meld deg på</ion-label>
+    </ion-item>
+    <ion-item lines="none" class="ion-no-margin ion-no-padding">
+      <a (click)="goTermsConditions()">vilkår og betingelser</a>
+    </ion-item>
+  </form>
+</ion-content>

@@ -1,0 +1,230 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "assets/css/icomoon/screen.css";
+@import "~leaflet/dist/leaflet.css";
+// @import "assets/css/icomoon/style.css";
+@import "assets/css/leaflet.css";
+// @import "assets/css/main.css";
+
+a {
+  text-decoration: none;
+  color: var(--ion-color-a-text);
+}
+ion-toolbar {
+  --background: var(--ion-color-tabbar);
+  ion-title {
+    --color: white;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+figure {
+  margin: 0px !important;
+}
+
+.font-size-22 {
+  font-size: 22px !important;
+}
+.font-size-18 {
+  font-size: 18px !important;
+}
+
+.map-icon-label i {
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 55px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.leaflet-div-icon {
+  transition: border-color 150ms ease-in-out !important;
+  display: inline-block !important;
+  border: 4px solid #31424a !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  height: 30px !important;
+  width: 30px !important;
+  z-index: 2;
+  text-align: center !important;
+}
+.leaflet-div-icon:after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 10px);
+  transition: border 150ms ease-in-out;
+  border-color: #31424a transparent transparent transparent;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  z-index: 1;
+  height: 0;
+  bottom: -10px;
+  width: 0;
+}
+
+.gm-style .gm-style-iw-c {
+  // max-height: 260px !important;
+  // border-radius: 0px !important;
+  // padding: 0px !important;
+  width: 250px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+  font-size: 13px;
+  font-weight: 300;
+  padding: 12px !important;
+  .gm-style-iw-d {
+    overflow: auto !important;
+  }
+  // margin: 0px !important;
+  .popup-content-container {
+    width: 100%;
+    .popup-content-img {
+      width: 100% !important;
+      height: 150px !important;
+    }
+    .popup-content-desc {
+      padding: 4px;
+      h3 {
+        letter-spacing: 0.02em;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0 0 5px;
+        color: #31424a;
+      }
+      h6 {
+        font-weight: 400;
+        font-size: 13px;
+        margin: 0 0 8px;
+        color: #596266;
+      }
+      ion-button {
+        --background: var(--ion-color-tabbar);
+        font-size: 15px;
+        height: 30px;
+      }
+      ion-item {
+        --inner-padding-end: 0px;
+        --padding-end: 0px;
+        --min-height: 24px !important;
+        ion-label {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.gmnoprint {
+  display: none;
+}
+
+.custom-marker-class {
+  // overflow: hidden;
+  // position: absolute;
+  // opacity: 0;
+  // cursor: pointer;
+  // left: 6px !important;
+  // top: -25px !important;
+  // z-index: 0;
+
+  transition: border-color 150ms ease-in-out !important;
+  display: inline-block !important;
+  border: 4px solid #31424a !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  height: 30px !important;
+  width: 30px !important;
+  z-index: 2;
+  text-align: center !important;
+  overflow: inherit !important;
+}
+.custom-marker-class:after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 10px);
+  transition: border 150ms ease-in-out;
+  border-color: #31424a transparent transparent transparent;
+  border-width: 10px 10px 0 10px;
+  border-style: solid;
+  z-index: 1;
+  height: 0;
+  bottom: -10px;
+  width: 0;
+}
+
+.leaflet-pane {
+  .leaflet-popup {
+    max-height: 260px !important;
+    .leaflet-popup-content-wrapper {
+      border-radius: 0px !important;
+      padding: 0px !important;
+
+      .leaflet-popup-content {
+        margin: 0px !important;
+        .popup-content-img {
+          width: 100% !important;
+          height: 150px !important;
+        }
+        .popup-content-desc {
+          padding: 4px;
+          h3 {
+            letter-spacing: 0.02em;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 0 5px;
+            color: #31424a;
+          }
+          h6 {
+            font-weight: 400;
+            font-size: 13px;
+            margin: 0 0 8px;
+            color: #596266;
+          }
+          ion-button {
+            --background: var(--ion-color-tabbar);
+            font-size: 15px;
+            height: 30px;
+          }
+          ion-item {
+            --inner-padding-end: 0px;
+            --padding-end: 0px;
+            --min-height: 24px !important;
+            ion-label {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

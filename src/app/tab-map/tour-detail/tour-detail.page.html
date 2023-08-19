@@ -1,0 +1,24 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-undo-outline" text="" defaultHref="/tabs/tab-map"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{tourInfo?.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="tour-img-container" style="background-image: url({{tourInfo?.featured_img}}); background-size: cover;">
+    <!-- <ion-img [src]="tourInfo?.featured_img"></ion-img> -->
+    <ion-button mode="ios" (click)="registerTour()" expand="full">
+      <ion-icon slot="start" src="assets/icon/tabs/ic_map.svg"></ion-icon>
+      Registrer tur her!
+    </ion-button>
+  </div>
+  <ion-item class="custom-status-container ion-no-padding" lines="none">
+    <ion-label class="ion-no-margin">{{tourInfo?.checkins}} registrert(e) tur(er)</ion-label>
+    <ion-label class="ion-no-margin">{{tourInfo?.cur_u_checks}} mine registreringer</ion-label>
+  </ion-item>
+  <div class="ion-padding" [innerHTML]="tourInfo?.description">
+  </div>
+</ion-content>

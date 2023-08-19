@@ -1,0 +1,29 @@
+<ion-header mode="ios">
+  <ion-toolbar class="ion-padding-top">
+    <ion-button mode="ios" class="custom-button" href="https://www.instagram.com/explore/tags/turlister/">
+      #turLister på Instagram
+    </ion-button>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Tag dine bilder med #turLister</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col size="6" *ngFor="let url of instagram_images; let i=index;" class="box flip-in-ver-right"
+      [ngStyle]="{'animation-delay':(i + 1) * 0.2+'s'}">
+      <div class="img-container">
+        <div class="img-item">
+          <ion-img [src]="url" (click)="viewImage(url)"></ion-img>
+        </div>
+      </div>
+    </ion-col>
+
+    <ion-col size="12">
+      <ion-button mode="ios" class="custom-more-button" href="https://www.instagram.com/explore/tags/turlister/">
+        <ion-icon slot="start" src="assets/icon/tabs/ic_instagram.svg"></ion-icon> Vis på Instagram
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

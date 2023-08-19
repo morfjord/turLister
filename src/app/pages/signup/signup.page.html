@@ -1,0 +1,52 @@
+<ion-header mode="ios">
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button icon="arrow-undo-outline" text="" defaultHref="/tabs/tab-mytours"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Opprett konto på turLister</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item lines="none" class="ion-text-center">
+    <ion-label class="custom-title ion-text-center font-size-25">Velkommen til turLister!</ion-label>
+  </ion-item>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onRegisterSubmit()">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Fornavn</ion-label>
+        <ion-input formControlName="firstname" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Etternavn</ion-label>
+        <ion-input formControlName="lastname" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Brukernavn</ion-label>
+        <ion-input formControlName="username" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">E-post</ion-label>
+        <ion-input formControlName="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Passord</ion-label>
+        <ion-input type="password" formControlName="password" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Bekreft passord</ion-label>
+        <ion-input type="password" formControlName="confirm_password" required></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-checkbox mode="md" slot="start" formControlName="isAcceptTermsConditions"></ion-checkbox>
+        <ion-label>Godta <a routerLink="/terms-conditions" class="custom-terms-label">vilkår og betingelser</a>
+        </ion-label>
+
+      </ion-item>
+    </ion-list>
+    <div class="ion-padding-top ion-padding-bottom">
+      <ion-button mode="ios" expand="full" type="submit" class="ion-no-margin custom-signup" [disabled]="registerForm.invalid">Meld deg på</ion-button>
+    </div>
+  </form>
+</ion-content>

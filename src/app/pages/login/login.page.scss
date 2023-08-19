@@ -1,0 +1,64 @@
+ion-header {
+    ion-toolbar {
+        ion-buttons {
+            ion-back-button {
+                color: white !important;
+                --icon-font-size: 22px;
+                padding-left: 10px;
+            }
+            ion-button {
+                ion-icon {
+                    color: white !important;
+                }
+            }
+        }
+    }
+}
+
+ion-content {
+    .custom-title {
+        --color: var(--ion-color-text);
+        // font-size: 18px;
+    }
+    .custom-login {
+        --background: var(--ion-color-text);
+    }
+    .custom-fb-button {
+        // float: right;
+        --background: var(--ion-color-fb-btn);
+        font-size: 18px;
+        font-weight: bold;
+        // width: 120px;
+    }
+    .custom-in-button {
+        float: left;
+        --background: var(--ion-color-in-btn);
+        font-size: 18px;
+        font-weight: bold;
+        width: 120px;
+    }
+    .custom-footer-actions {
+        --inner-padding-end: 0px;
+        --padding-end: 0px;
+        ion-label {
+            line-height: 1.3em;
+            font-size: 14px;
+            color: var(--ion-color-label);
+        }
+    }
+
+    ion-list {
+        ion-item {
+            --padding-start: 0px;
+            ion-label {
+                color: var(--ion-color-label);
+                font-size: 14px;
+            }
+            ion-checkbox {
+                --background-checked: var(--ion-color-text);
+                opacity: 0.75;
+                margin-right: 10px;
+            }
+        }
+    }
+}

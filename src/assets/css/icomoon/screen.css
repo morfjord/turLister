@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'icomoonv1';
+    src: url("/assets/fonts/category-icons/icomoon.eot?bnninq");
+    src: url("/assets/fonts/category-icons/icomoon.eot?bnninq#iefix") format("embedded-opentype"), url("/assets/fonts/category-icons/icomoon.ttf?bnninq") format("truetype"), url("/assets/fonts/category-icons/icomoon.woff?bnninq") format("woff"), url("/assets/fonts/category-icons/icomoon.svg?bnninq#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    font-family: 'icomoonv1' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-category-gradering-krevende:before {
+    content: "\e914"
+}
+
+.icon-category-gradering-enkel:before {
+    content: "\e915"
+}
+
+.icon-category-gradering-middels:before {
+    content: "\e916"
+}
+
+.icon-category-gradering-ekspert:before {
+    content: "\e917"
+}
+
+.icon-category-badeliv:before {
+    content: "\e905"
+}
+
+.icon-category-baitliv:before {
+    content: "\e906"
+}
+
+.icon-category-dykking:before {
+    content: "\e907"
+}
+
+.icon-category-fiske:before {
+    content: "\e908"
+}
+
+.icon-category-fottur:before {
+    content: "\e909"
+}
+
+.icon-category-friluftomralder:before {
+    content: "\e90a"
+}
+
+.icon-category-fuglekikking:before {
+    content: "\e90b"
+}
+
+.icon-category-kulturhistoriske:before {
+    content: "\e90c"
+}
+
+.icon-category-langrenn:before {
+    content: "\e90d"
+}
+
+.icon-category-klatring:before {
+    content: "\e90e"
+}
+
+.icon-category-padling:before {
+    content: "\e90f"
+}
+
+.icon-category-sykling:before {
+    content: "\e910"
+}
+
+.icon-category-vind-og-vannsport:before {
+    content: "\e911"
+}
+
+.icon-external-link-alt:before {
+    content: "\e912"
+}
+
+.icon-gps:before {
+    content: "\e913"
+}
+
+/*.icon-menu-3:before {
+    content: "\e904"
+}*/
+
+.icon-cross:before {
+    content: "\e923"
+}
+
+.icon-search:before {
+    content: "\e900"
+}
+
+.icon-pin-check:before {
+    content: "\e901"
+}
+
+.icon-password:before {
+    content: "\e902"
+}
+
+.icon-menu-4:before {
+    content: "\e903"
+}
+
+/*.icon-menu-2:before {
+    content: "\e918"
+}*/
+
+.icon-menu-1:before {
+    content: "\e919"
+}
+
+.icon-instagram:before {
+    content: "\e91a"
+}
+
+.icon-google-plus:before {
+    content: "\e91b"
+}
+
+.icon-go:before {
+    content: "\e91c"
+}
+
+.icon-facebook:before {
+    content: "\e91d"
+}
+
+.icon-email:before {
+    content: "\e91e"
+}
+
+.icon-clock:before {
+    content: "\e91f"
+}
+
+.icon-check-mark:before {
+    content: "\e920"
+}
+
+.icon-back:before {
+    content: "\e921"
+}
+
+.icon-add-new:before {
+    content: "\e922"
+}
+
+.icon-user:before,
+.icon-profile:before,
+.icon-avatar:before,
+.icon-head:before {
+    content: "\e924"
+}
+
+@font-face {
+    font-family: 'icomoon1';
+    src: url("/assets/fonts/category-icons/icomoon1.eot?bnninq");
+    src: url("/assets/fonts/category-icons/icomoon1.eot?bnninq#iefix") format("embedded-opentype"), url("/assets/fonts/category-icons/icomoon1.ttf?bnninq") format("truetype"), url("/assets/fonts/category-icons/icomoon1.woff?bnninq") format("woff"), url("/assets/fonts/category-icons/icomoon1.svg?bnninq#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+.icon-category-handicap-loyper,
+.icon-category-konkurranse{
+    /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon1' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-category-handicap-loyper:before {
+    content: "\e100";
+}
+.icon-category-konkurranse:before {
+    content: "\e19e";
+}
+
+@font-face {
+    font-family: 'icomoon-menu';
+    src: url("/assets/fonts/category-icons/icomoon-menu.eot?bnninq");
+    src: url("/assets/fonts/category-icons/icomoon-menu.eot#iefix") format("embedded-opentype"), url("/assets/fonts/category-icons/icomoon-menu.ttf?bnninq") format("truetype"), url("/assets/fonts/category-icons/icomoon-menu?bnninq") format("woff"), url("/assets/fonts/category-icons/icomoon-menu.svg?bnninq#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+.icon-menu-3,
+.icon-menu-2{
+    /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-menu' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu-3:before {
+    content: "\e701";
+}
+.icon-menu-2:before {
+    content: "\e702";
+}
+.icon-menu-instagram:before {
+  content: "\ea92";
+}

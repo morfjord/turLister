@@ -1,0 +1,31 @@
+ion-header {
+    ion-toolbar {
+        ion-searchbar {
+            --border-radius: 30px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+            --color: white;
+            --placeholder-color: #eee;
+            --icon-color: white;
+        }
+    }
+}
+
+ion-content {
+    .custom-closeby {
+        position: absolute;
+        bottom: 28px;
+        right: 20px;
+        --background: red;
+        font-size: 16px;
+        z-index: 99999;
+    }
+    .custom-showall {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        --background: var(--ion-color-tabbar);
+        font-size: 16px;
+        z-index: 99999;
+    }
+}

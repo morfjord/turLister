@@ -1,0 +1,14 @@
+<ion-header mode="ios">
+  <ion-toolbar>
+    <ion-title>Klikk på aktiviteten du vil se:</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item button detail="false" *ngFor="let category of (categories | async); let i=index;" class="category-item box scale-in-center" [ngStyle]="{'animation-delay':(i + 1) * 0.2+'s'}" (click)="filterToursWithCategory(category)">
+      <ion-icon class="{{category.pin_image | filterIcons}}" slot="start"></ion-icon>
+      <ion-label>{{ category.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
